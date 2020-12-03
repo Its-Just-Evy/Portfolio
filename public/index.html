@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Evy Lukassen</title>
+</head>
+<body class="font-main">
+    <div class="grid grid-rows-3">
+
+        <!-- home page -->
+        <div id="home" class="row-span-1 bg-home bg-cover h-screen">
+            <div>
+                <nav class="text-center grid grid-cols-10 py-5 relative text-gray-300">
+                    <div class="col-start-1">
+                        <h1 class="font-bold uppercase">
+                            <a href="#home">Evy Lukassen</a>
+                        </h1>
+                    </div>
+                    <ul class="col-start-9 col-span-2 grid grid-cols-2 pr-10">
+                        <li class="col-start-1">
+                            <a href="#overmij">
+                                <span class="uppercase">Over mij</span>
+                            </a>
+                        </li>
+                        <li class="col-start-2">
+                            <a href="#projecten">
+                                <span class="uppercase">Projecten</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Over mij page -->
+        <div id="overmij" class="row-span-1">
+            <div class="pt-6">
+                <h2 class="font-bold text-6xl text-center uppercase">Over mij</h2>
+            </div>
+            <div class="grid grid-rows-2 grid-flow-col">
+                <div>
+                    <img src="/img/Person-placeholder.jpg" alt="Me" class="h-96">
+                </div>
+                <div>
+                    <span>Tekst1</span>
+                </div>
+                <div class="col-span-1">
+                    <span>Tekst2</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projecten page -->
+        <div id="projecten" class="row-span-1">
+            <div class="pt-6">
+                <h2 class="font-bold text-6xl text-center uppercase">Projecten</h2>
+            </div>
+            <div class="grid grid-cols-2 gap-20 justify-items-center mx-20 mt-20">
+                <div>Boomies</div>
+                <div>AXI</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
