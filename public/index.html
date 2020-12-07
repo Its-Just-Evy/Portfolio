@@ -10,9 +10,9 @@
     <div class="grid grid-rows-3">
 
         <!-- home page -->
-        <div id="home" class="row-span-1 bg-home bg-cover h-screen">
+        <div id="home" class="row-span-1 bg-home bg-cover h-screen text-gray-300">
             <div>
-                <nav class="text-center grid grid-cols-10 py-5 relative text-gray-300">
+                <nav class="text-center grid grid-cols-10 py-5 relative">
                     <div class="col-start-1">
                         <h1 class="font-bold uppercase">
                             <a href="#home">Evy Lukassen</a>
@@ -32,34 +32,48 @@
                     </ul>
                 </nav>
             </div>
+            <div class="grid h-96 place-items-center">
+                <span class="uppercase justify-self-center text-9xl">Welkom</span>
+            </div>
         </div>
 
         <!-- Over mij page -->
-        <div id="overmij" class="row-span-1">
+        <div id="overmij" class="row-span-1 bg-gray-700 text-gray-300">
             <div class="pt-6">
                 <h2 class="font-bold text-6xl text-center uppercase">Over mij</h2>
             </div>
-            <div class="grid grid-rows-2 grid-flow-col">
+            <div class="grid grid-cols-3 place-items-center mt-20 ml-20">
                 <div>
-                    <img src="/img/Person-placeholder.jpg" alt="Me" class="h-96">
+                    <img src="/img/Me.jpg" alt="Me" class="h-96 rounded">
                 </div>
-                <div>
-                    <span>Tekst1</span>
-                </div>
-                <div class="col-span-1">
-                    <span>Tekst2</span>
+                <div class="col-span-2">
+                    <span>Mijn naam is Evy Lukassen</span>
+                    <span class="block">Ik ben een laatste jaars HBO AD ICT & Media design student aan de Fontys is Tilburg.</span>
+                    <span class="block">Binnen de opleiding heb ik gekozen voor de richting front-end developer.</span>
                 </div>
             </div>
         </div>
 
         <!-- Projecten page -->
-        <div id="projecten" class="row-span-1">
+        <div id="projecten" class="row-span-1 bg-gray-100">
             <div class="pt-6">
                 <h2 class="font-bold text-6xl text-center uppercase">Projecten</h2>
             </div>
-            <div class="grid grid-cols-2 gap-20 justify-items-center mx-20 mt-20">
-                <div>Boomies</div>
-                <div>AXI</div>
+            <div class="grid grid-cols-2 justify-items-center mx-48 gap-20 mt-20">
+                <div class="bg-white rounded overflow-hidden shadow-md">
+                    <img src="/img/Boomies.jpg" alt="Boomies" class="w-96 h-96 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">Boomies</span>
+                        <span class="block">stukje intro tekst</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded overflow-hidden shadow-md">
+                    <img src="/img/AXI.png" alt="AXI" class="w-96 h-96 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold">AXI</span>
+                        <span class="block">stukje intro tekst</span>
+                    </div>
+                </div>
             </div>
         </div>
 
