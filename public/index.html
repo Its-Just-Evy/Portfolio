@@ -59,14 +59,22 @@
             <div class="pt-6">
                 <h2 class="font-bold text-6xl text-center uppercase">Projecten</h2>
             </div>
+
+            <div id="Boomies" class="bg-black bg-opacity-80 absolute hidden text-gray-300">
+                <span>Boomies</span>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                <span class="block">Tekst over boomies</span>
+            </div>
+
             <div class="grid grid-cols-2 justify-items-center mx-48 gap-20 mt-20">
-                <div class="bg-white rounded overflow-hidden shadow-md">
+                <div onclick="showBoomies()" class="bg-white rounded overflow-hidden shadow-md">
                     <img src="/img/Boomies.jpg" alt="Boomies" class="w-96 h-96 object-cover">
                     <div class="m-4">
                         <span class="font-bold">Boomies</span>
                         <span class="block">stukje intro tekst</span>
                     </div>
                 </div>
+
                 <div class="bg-white rounded overflow-hidden shadow-md">
                     <img src="/img/AXI.png" alt="AXI" class="w-96 h-96 object-cover">
                     <div class="m-4">
@@ -74,9 +82,11 @@
                         <span class="block">stukje intro tekst</span>
                     </div>
                 </div>
+                
             </div>
         </div>
 
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
