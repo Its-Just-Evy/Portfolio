@@ -12,23 +12,23 @@
         <!-- home page -->
         <div id="home" class="row-span-1 bg-home bg-cover h-screen text-gray-300">
             <div>
-                <nav class="text-center grid grid-cols-10 py-5 relative">
-                    <div class="col-start-1">
+                <nav class="text-center hidden md:grid grid-cols-10 fixed w-full">
+                    <div class="col-start-1 py-5">
                         <h1 class="font-bold uppercase">
                             <a href="#home">Evy Lukassen</a>
                         </h1>
                     </div>
                     <ul class="col-start-9 col-span-2 grid grid-cols-2 pr-10">
-                        <li class="col-start-1">
-                            <a href="#overmij">
+                        <a href="#overmij" class="col-start-1 hover:bg-black py-5 cursor-pointer">
+                            <li>
                                 <span class="uppercase">Over mij</span>
-                            </a>
-                        </li>
-                        <li class="col-start-2">
-                            <a href="#projecten">
+                            </li>
+                        </a>
+                        <a href="#projecten" class="col-start-2 hover:bg-black py-5 cursor-pointer">
+                            <li>
                                 <span class="uppercase">Projecten</span>
-                            </a>
-                        </li>
+                            </li>
+                        </a>
                     </ul>
                 </nav>
             </div>
@@ -44,7 +44,7 @@
             </div>
             <div class="grid grid-cols-3 place-items-center mt-20 ml-20">
                 <div>
-                    <img src="/img/Me.jpg" alt="Me" class="h-96 rounded">
+                    <img src="../img/Me.jpg" alt="Me" class="h-96 rounded">
                 </div>
                 <div class="col-span-2">
                     <span>Mijn naam is Evy Lukassen</span>
@@ -63,7 +63,7 @@
             <div id="Boomies" onclick="noshowBoomies()" class="bg-black bg-opacity-80 absolute hidden text-gray-300 mt-20 w-full h-96">
                 <div class="p-5 w-full">
                     <span class="font-bold text-4xl">Boomies</span>
-                    <svg onclick="noshowBoomies()" class="w-6 h-6 float-right cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    <svg onclick="noshowBoomies()" class="w-6 h-6 float-right cursor-pointer hover:text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                     <span class="block">De opdracht van dit project was iets te bedenken om ouders met jonge kinderen te stimuleren meer naar buiten te gaan.</span>
                     <span>Samen met een groep ben ik hiermee aan het werk gegaan en hebben we een pwa ontworpen waarmee je buiten avonturen kunt beleven.</span>
                     <span class="block">De avonturen zijn gemaakt voor kinderen en kun je bijvoorbeeld tijdens het wandelen in het bos volgen.</span>
@@ -75,16 +75,17 @@
             <div id="AXI" onclick="noshowAxi()" class="bg-black bg-opacity-80 absolute hidden text-gray-300 mt-20 w-full h-96">
                 <div class="p-5 w-full">
                     <span class="font-bold text-4xl">AXI</span>
-                    <svg onclick="noshowBoomies()" class="w-6 h-6 float-right cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    <svg onclick="noshowAxi()" class="w-6 h-6 float-right cursor-pointer hover:text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                     <span class="block">De opdracht voor dit project was een nieuw de design te maken voor de pda applicatie die gebruikt wordt in de retail.</span>
                     <span>Met de groep zijn wij hiermee aan de slag gegaan. We hebben een heel nieuw design gemaakt in adobe XD en hebben dit vervolgens uitgewerkt in een pwa.</span>
                     <span class="block">De pwa is opgebouwd met React en material.ui en bestaat uit verschillende components.</span>
+                    <span>Voor dit project ben ik bezig geweest met het ontwerpen en het maken van de applicatie.</span>
                 </div>
             </div>
 
             <div class="grid grid-cols-2 justify-items-center mx-48 gap-20 mt-20">
                 <div onclick="showBoomies()" class="bg-white rounded overflow-hidden shadow-md cursor-pointer">
-                    <img src="/img/Boomies.jpg" alt="Boomies" class="w-96 h-96 object-cover">
+                    <img src="../img/Boomies.jpg" alt="Boomies" class="w-96 h-96 object-cover">
                     <div class="m-4">
                         <span class="font-bold">Boomies</span>
                         <span class="block">De interactieve avonturen pwa</span>
@@ -92,7 +93,7 @@
                 </div>
 
                 <div onclick="showAxi()" class="bg-white rounded overflow-hidden shadow-md cursor-pointer">
-                    <img src="/img/AXI.png" alt="AXI" class="w-96 h-96 object-cover">
+                    <img src="../img/AXI.png" alt="AXI" class="w-96 h-96 object-cover">
                     <div class="m-4">
                         <span class="font-bold">AXI</span>
                         <span class="block">De pda applicatie voor de retail</span>

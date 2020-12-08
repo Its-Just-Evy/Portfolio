@@ -7,7 +7,7 @@ module.exports = {
         main: ['Roboto'],
       },
       backgroundImage: theme => ({
-        'home': "url('/img/temp.jpg')",
+        'home': "url('../img/temp.jpg')",
       }),
     },
   },
