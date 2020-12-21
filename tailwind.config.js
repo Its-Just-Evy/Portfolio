@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        main: ['Roboto'],
+        main: ['Varela Round'],
       },
       backgroundImage: theme => ({
         'home': "url('../img/temp.jpg')",

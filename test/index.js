@@ -1,33 +1,7 @@
-var boomies = document.getElementById("Boomies");
-var axi = document.getElementById("AXI");
-
-function showBoomies() {
-    boomies.classList.remove("hidden")
-    boomies.classList.add("flex")
-    axi.classList.remove("flex")
-    axi.classList.add("hidden")
-}
-
-function noshowBoomies() {
-    boomies.classList.remove("flex")
-    boomies.classList.add("hidden")
-}
-
-function showAxi() {
-    axi.classList.remove("hidden")
-    axi.classList.add("flex")
-    boomies.classList.remove("flex")
-    boomies.classList.add("hidden")
-}
-
-function noshowAxi() {
-    axi.classList.remove("flex")
-    axi.classList.add("hidden")
-}
-
-// scrolling 
 function scrollFooter(scrollY, heightFooter)
 {
+    console.log(scrollY);
+    console.log(heightFooter);
 
     if(scrollY >= heightFooter)
     {
@@ -46,14 +20,14 @@ function scrollFooter(scrollY, heightFooter)
 $(window).load(function(){
     var windowHeight        = $(window).height(),
         footerHeight        = $('footer').height(),
-        heightDocument      = (windowHeight) + ($('.content').height()) + ($('footer').height());
+        heightDocument      = (windowHeight) + ($('.content').height()) + ($('footer').height()) - 20;
 
-    // De grootte van het element instellen om te animeren
+    // Definindo o tamanho do elemento pra animar
     $('#scroll-animate, #scroll-animate-main').css({
         'height' :  heightDocument + 'px'
     });
 
-    // De grootte van de koptekst en inhoudselementen definiëren
+    // Definindo o tamanho dos elementos header e conteúdo
     $('header').css({
         'height' : windowHeight + 'px',
         'line-height' : windowHeight + 'px'
@@ -65,7 +39,7 @@ $(window).load(function(){
 
     scrollFooter(window.scrollY, footerHeight);
 
-    // tijdens het scrollen
+    // ao dar rolagem
     window.onscroll = function(){
         var scroll = window.scrollY;
 
