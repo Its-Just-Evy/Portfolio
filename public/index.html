@@ -16,17 +16,21 @@
 
                 <!-- home page -->
                 <header>
-                    <div id="home" class="row-span-1 bg-home bg-cover h-screen text-gray-300">
-                        <div class="grid h-96 place-items-center place-content-center">
-                            <span class="uppercase text-8xl">Hi ik ben Evy</span>
-                            <span class="text-3xl"><span id="holder"></span><span class="blinking-cursor">|</span></span>
+                    <div class="stars relative">
+                        <div class="twinkling relative">
+                            <div id="home" class="row-span-1 bg-home bg-cover h-screen text-gray-300">
+                                <div class="grid h-96 place-items-center place-content-center">
+                                    <span class="uppercase text-8xl">Hi ik ben Evy</span>
+                                    <span class="text-3xl"><span id="holder"></span><span class="blinking-cursor">|</span></span>
+                                </div>
+                            </div>   
                         </div>
                     </div>
                 </header>
 
                 <!-- Over mij page -->
                 <section class="content">
-                    <div id="overmij" class="row-span-1 bg-gray-700 text-gray-300">
+                    <div id="overmij" class="row-span-1 bg-gray-900 text-gray-300">
                         <div class="pt-6">
                             <h2 class="font-bold text-6xl text-center uppercase">Over mij</h2>
                         </div>
@@ -47,13 +51,12 @@
                     <!-- Projecten page -->
                     <div id="projecten" class="row-span-1 bg-gray-100">
                         <div class="pt-6">
-                            <h2 class="font-bold text-6xl text-center uppercase">Projecten</h2>
+                            <h2 class="font-bold text-6xl text-center uppercase text-gray-900">Projecten</h2>
                         </div>
 
                         <div id="Boomies" onclick="noshowBoomies()"
-                            class="bg-black bg-opacity-80 absolute hidden text-gray-300 mt-20 w-full">
+                            class="bg-black bg-opacity-90 absolute hidden text-gray-300 -mt-40 w-full">
                             <div class="p-5 w-full">
-                                <span class="font-bold text-4xl">Boomies</span>
                                 <svg onclick="noshowBoomies()"
                                     class="w-6 h-6 float-right cursor-pointer hover:text-red-500" fill="none"
                                     stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -61,29 +64,39 @@
                                         d="M6 18L18 6M6 6l12 12">
                                     </path>
                                 </svg>
-                                <span class="block">De opdracht van dit project was iets te bedenken om ouders met jonge
-                                    kinderen te
-                                    stimuleren meer naar buiten te gaan.</span>
-                                <span>Samen met een groep ben ik hiermee aan het werk gegaan en hebben we een pwa
-                                    ontworpen waarmee
-                                    je buiten avonturen kunt beleven.</span>
-                                <span class="block">De avonturen zijn gemaakt voor kinderen en kun je bijvoorbeeld
-                                    tijdens het
-                                    wandelen in het bos volgen.</span>
-                                <span>Tijdens het wandelen wordt er een verhaal verteld met tusendoor puzzels en
-                                    opdrachten die je
-                                    in het bos kunt uitvoeren zonder de telefoon.</span>
-                                <span class="block">De pwa is gemaakt met html, css en javascript. Ik ben in dit project
-                                    bezig
-                                    geweest met het opzetten van de alle schermen en zorgen dat alles binnen de pwa
-                                    werkt.</span>
+                                <div class="grid grid-cols-2 mt-8 ml-20">
+                                    <div class="flex flex-wrap gap-28 mb-8">
+                                        <img class="h-72 rounded" src="../img/BadgeInfo.jpeg" alt="Badge Info">
+                                        <img class="h-72 rounded" src="../img/Badges.jpeg" alt="Badges">
+                                        <img class="h-72 rounded" src="../img/Boomies.jpg" alt="Boomies">
+                                        <img class="h-72 rounded" src="../img/StartVerhaal.jpeg" alt="Start Verhaal">
+                                        <img class="h-72 rounded" src="../img/VerhaalKeus.jpeg" alt="Verhaal keuze">
+                                        <img class="h-72 rounded" src="../img/GeluidMaken.jpeg" alt="Geluid maken">
+                                    </div>
+                                    <div class="flex items-center mr-20">
+                                        <span class="block">
+                                            <span class="font-bold text-4xl leading-loose">Boomies <br> </span>
+                                            De opdracht van dit project was iets te bedenken om ouders met jonge
+                                            kinderen te stimuleren meer naar buiten te gaan.
+                                            Samen met een groep ben ik hiermee aan het werk gegaan en hebben we een pwa
+                                            ontworpen waarmee je buiten avonturen kunt beleven.
+                                            De avonturen zijn gemaakt voor kinderen en kun je bijvoorbeeld
+                                            tijdens het wandelen in het bos volgen.
+                                            Tijdens het wandelen wordt er een verhaal verteld met tusendoor puzzels en
+                                            opdrachten die je in het bos kunt uitvoeren zonder de telefoon.
+                                            De pwa is gemaakt met html, css en javascript. Ik ben in dit project
+                                            bezig geweest met het opzetten van de alle schermen en zorgen dat alles binnen de pwa
+                                            werkt.
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <div id="AXI" onclick="noshowAxi()"
-                            class="bg-black bg-opacity-80 absolute hidden text-gray-300 mt-16 w-full">
+                            class="bg-black bg-opacity-90 absolute hidden text-gray-300 -mt-40 w-full">
                             <div class="p-5 w-full">
-                                <span class="font-bold text-4xl">AXI</span>
+                                
                                 <svg onclick="noshowAxi()" class="w-6 h-6 float-right cursor-pointer hover:text-red-500"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -91,17 +104,30 @@
                                         d="M6 18L18 6M6 6l12 12">
                                     </path>
                                 </svg>
-                                <span class="block">De opdracht voor dit project was een nieuw de design te maken voor
-                                    de pda
-                                    applicatie die gebruikt wordt in de retail.</span>
-                                <span>Met de groep zijn wij hiermee aan de slag gegaan. We hebben een heel nieuw design
-                                    gemaakt in
-                                    adobe XD en hebben dit vervolgens uitgewerkt in een pwa.</span>
-                                <span class="block">De pwa is opgebouwd met React en material.ui en bestaat uit
-                                    verschillende
-                                    components.</span>
-                                <span>Voor dit project ben ik bezig geweest met het ontwerpen en het maken van de
-                                    applicatie.</span>
+                                <div class="grid grid-cols-2 mt-8 ml-20">
+                                    <div class="flex flex-wrap gap-28 mb-8">
+                                        <img class="h-72 rounded" src="../img/AXI.png" alt="AXI">
+                                        <img class="h-72 rounded" src="../img/LegeLijst.jpeg" alt="Lege Lijst">
+                                        <img class="h-72 rounded" src="../img/Lijst.jpeg" alt="Lijst">
+                                        <img class="h-72 rounded" src="../img/Verzenden.jpeg" alt="Verzenden">
+                                    </div>
+                                    <div class="flex items-center mr-20">
+                                        <span class="block">
+                                            <span class="font-bold text-4xl leading-loose">AXI <br> </span>
+                                            De opdracht voor dit project was een nieuw de design te maken voor
+                                            de pda
+                                            applicatie die gebruikt wordt in de retail.
+                                            Met de groep zijn wij hiermee aan de slag gegaan. We hebben een heel nieuw design
+                                            gemaakt in
+                                            adobe XD en hebben dit vervolgens uitgewerkt in een pwa.
+                                            De pwa is opgebouwd met React en material.ui en bestaat uit
+                                            verschillende
+                                            components.
+                                            Voor dit project ben ik bezig geweest met het ontwerpen en het maken van de
+                                            applicatie.
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -110,16 +136,16 @@
                                 class="bg-white rounded overflow-hidden shadow-md cursor-pointer">
                                 <img src="../img/Boomies.jpg" alt="Boomies" class="w-96 h-96 object-cover">
                                 <div class="m-4">
-                                    <span class="font-bold">Boomies</span>
-                                    <span class="block">De interactieve avonturen pwa</span>
+                                    <span class="font-bold text-gray-900">Boomies</span>
+                                    <span class="block text-gray-900">De interactieve avonturen pwa</span>
                                 </div>
                             </div>
 
                             <div onclick="showAxi()" class="bg-white rounded overflow-hidden shadow-md cursor-pointer">
                                 <img src="../img/AXI.png" alt="AXI" class="w-96 h-96 object-cover">
                                 <div class="m-4">
-                                    <span class="font-bold">AXI</span>
-                                    <span class="block">De pda applicatie voor de retail</span>
+                                    <span class="font-bold text-gray-900">AXI</span>
+                                    <span class="block text-gray-900">De pda applicatie voor de retail</span>
                                 </div>
                             </div>
 

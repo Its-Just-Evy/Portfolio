@@ -4226,10 +4226,6 @@ video {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
 }
 
-.bg-home{
-  background-image: url('../img/temp.jpg');
-}
-
 .from-transparent{
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -31263,6 +31259,51 @@ footer,
   transition-timing-function: cubic-bezier(0, 0, 0, 1);
 }
 
+/* background start */
+
+@keyframes move-twink-back {
+  from {
+    background-position:0 0;
+  }
+
+  to {
+    background-position:-10000px 5000px;
+  }
+}
+
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position:0 0;
+  }
+
+  to {
+    background-position:-10000px 5000px;
+  }
+}
+
+.stars, .twinkling {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:1;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
@@ -34940,10 +34981,6 @@ footer,
 
   .sm\:bg-gradient-to-tl{
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
-  }
-
-  .sm\:bg-home{
-    background-image: url('../img/temp.jpg');
   }
 
   .sm\:from-transparent{
@@ -65494,10 +65531,6 @@ footer,
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
-  .md\:bg-home{
-    background-image: url('../img/temp.jpg');
-  }
-
   .md\:from-transparent{
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -96044,10 +96077,6 @@ footer,
 
   .lg\:bg-gradient-to-tl{
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
-  }
-
-  .lg\:bg-home{
-    background-image: url('../img/temp.jpg');
   }
 
   .lg\:from-transparent{
@@ -126598,10 +126627,6 @@ footer,
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
-  .xl\:bg-home{
-    background-image: url('../img/temp.jpg');
-  }
-
   .xl\:from-transparent{
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -157148,10 +157173,6 @@ footer,
 
   .\32xl\:bg-gradient-to-tl{
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
-  }
-
-  .\32xl\:bg-home{
-    background-image: url('../img/temp.jpg');
   }
 
   .\32xl\:from-transparent{

@@ -6,9 +6,6 @@ module.exports = {
       fontFamily: {
         main: ['Varela Round'],
       },
-      backgroundImage: theme => ({
-        'home': "url('../img/temp.jpg')",
-      }),
     },
   },
   variants: {
