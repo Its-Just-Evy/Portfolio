@@ -1,16 +1,22 @@
 var boomies = document.getElementById("Boomies");
 var axi = document.getElementById("AXI");
+var prjct1 = document.getElementById("prjct1");
+var prjct2 = document.getElementById("prjct2");
 
 function showBoomies() {
     boomies.classList.remove("hidden")
     boomies.classList.add("flex")
     axi.classList.remove("flex")
     axi.classList.add("hidden")
+    prjct1.classList.remove("hover-blur")
+    prjct2.classList.remove("hover-blur")
 }
 
 function noshowBoomies() {
     boomies.classList.remove("flex")
     boomies.classList.add("hidden")
+    prjct1.classList.add("hover-blur")
+    prjct2.classList.add("hover-blur")
 }
 
 function showAxi() {
@@ -18,11 +24,15 @@ function showAxi() {
     axi.classList.add("flex")
     boomies.classList.remove("flex")
     boomies.classList.add("hidden")
+    prjct2.classList.remove("hover-blur")
+    prjct1.classList.remove("hover-blur")
 }
 
 function noshowAxi() {
     axi.classList.remove("flex")
     axi.classList.add("hidden")
+    prjct2.classList.add("hover-blur")
+    prjct1.classList.add("hover-blur")
 }
 
 // scrolling 
