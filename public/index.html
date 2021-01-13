@@ -23,6 +23,9 @@
                                     <span class="uppercase text-3xl md:text-8xl">Hi ik ben Evy</span>
                                     <span class="text-base md:text-3xl"><span id="holder"></span><span class="blinking-cursor">|</span></span>
                                 </div>
+                                <div id="arrow">
+                                    <span></span>
+                                </div>
                             </div>   
                         </div>
                     </div>
@@ -57,21 +60,17 @@
                         <!-- Onclick Boomies -->
                         <div id="Boomies" class="bg-black bg-opacity-90 absolute hidden text-gray-300 mt-8 md:-mt-40 w-full">
                             <div class="p-5 w-full">
-                                <svg onclick="noshowBoomies()"
-                                    class="w-6 h-6 md:w-12 md:h-12 float-right cursor-pointer hover:text-red-500 " fill="none"
-                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M6 18L18 6M6 6l12 12">
-                                    </path>
+                                <svg onclick="noshowBoomies()"  class="w-6 h-6 md:w-12 md:h-12 float-right cursor-pointer hover:text-red-500 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"  d="M6 18L18 6M6 6l12 12"></path>
                                 </svg>
                                 <div class="md:grid md:grid-cols-2 mt-8 md:ml-20">
                                     <div class="hidden md:flex md:flex-wrap lg:gap-8 2xl:gap-28 md:mb-8">
-                                        <img class="h-72 rounded" src="../img/BadgeInfo.jpeg" alt="Badge Info">
-                                        <img class="h-72 rounded" src="../img/Badges.jpeg" alt="Badges">
-                                        <img class="h-72 rounded" src="../img/Boomies.jpg" alt="Boomies">
-                                        <img class="h-72 rounded" src="../img/StartVerhaal.jpeg" alt="Start Verhaal">
-                                        <img class="h-72 rounded" src="../img/VerhaalKeus.jpeg" alt="Verhaal keuze">
-                                        <img class="h-72 rounded" src="../img/GeluidMaken.jpeg" alt="Geluid maken">
+                                        <img onclick="ShowImage('../img/BadgeInfo.jpeg')" class="myImg h-72 rounded transform hover:scale-110"src="../img/BadgeInfo.jpeg" alt="Badge Info">
+                                        <img onclick="ShowImage('../img/Badges.jpeg')" class="myImg h-72 rounded transform hover:scale-110" src="../img/Badges.jpeg" alt="Badges">
+                                        <img onclick="ShowImage('../img/Boomies.jpg')" class="myImg h-72 rounded transform hover:scale-110" src="../img/Boomies.jpg" alt="Boomies">
+                                        <img onclick="ShowImage('../img/StartVerhaal.jpeg')" class="myImg h-72 rounded transform hover:scale-110" src="../img/StartVerhaal.jpeg" alt="Start Verhaal">
+                                        <img onclick="ShowImage('../img/VerhaalKeus.jpeg')" class="myImg h-72 rounded transform hover:scale-110" src="../img/VerhaalKeus.jpeg" alt="Verhaal keuze">
+                                        <img onclick="ShowImage('../img/GeluidMaken.jpeg')" class="myImg h-72 rounded transform hover:scale-110" src="../img/GeluidMaken.jpeg" alt="Geluid maken">
                                     </div>
                                     <div class="flex items-center md:mr-20">
                                         <span class="block text-xs md:text-base">
@@ -108,10 +107,10 @@
                                 </svg>
                                 <div class="md:grid md:grid-cols-2 mt-8 md:ml-20">
                                     <div class="hidden md:flex md:flex-wrap md:gap-28 md:mb-8">
-                                        <img class="h-72 rounded" src="../img/AXI.png" alt="AXI">
-                                        <img class="h-72 rounded" src="../img/LegeLijst.jpeg" alt="Lege Lijst">
-                                        <img class="h-72 rounded" src="../img/Lijst.jpeg" alt="Lijst">
-                                        <img class="h-72 rounded" src="../img/Verzenden.jpeg" alt="Verzenden">
+                                        <img onclick="ShowImage('../img/AXI.png')" class="myImg h-72 rounded transform hover:scale-110" src="../img/AXI.png" alt="AXI">
+                                        <img onclick="ShowImage('../img/LegeLijst.jpeg')" class="myImg h-72 rounded transform hover:scale-110" src="../img/LegeLijst.jpeg" alt="Lege Lijst">
+                                        <img onclick="ShowImage('../img/Lijst.jpeg')" class="myImg h-72 rounded transform hover:scale-110" src="../img/Lijst.jpeg" alt="Lijst">
+                                        <img onclick="ShowImage('../img/Verzenden.jpeg')" class="myImg h-72 rounded transform hover:scale-110" src="../img/Verzenden.jpeg" alt="Verzenden">
                                     </div>
                                     <div class="flex items-center md:mr-20">
                                         <span class="block text-xs md:text-base">
@@ -131,6 +130,14 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+
+                        <!-- Image full screen -->
+                        <div id="myModal" class="modal">
+                            <svg class="w-6 h-6 md:w-12 md:h-12 float-right cursor-pointer hover:text-red-500 close" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                            <img src="" alt="Badge Info" id="img" class="h-4/5 mx-auto block rounded">
                         </div>
 
                         <!-- Kleine weergave projecten -->
