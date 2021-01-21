@@ -8,8 +8,51 @@
     <title>Document</title>
 </head>
 <body>
+
+<div class="row">
+  <div class="column">
+    <img src="../img/AXI.png" style="width:50%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../img/BadgeInfo.jpeg" style="width:50%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../img/Badges.jpeg" style="width:50%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../img/Behaald.jpeg" style="width:50%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="../img/AXI.png" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="../img/BadgeInfo.jpeg" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="../img/Badges.jpeg" style="width:50%">
+    </div>
     
-    <div class="arrow bounce"></div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="../img/Behaald.jpeg" style="width:50%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<script src="index.js"></script>
 
 </body>
 </html>
